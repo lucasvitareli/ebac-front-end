@@ -23,4 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             githubLink.href = json.html_url; 
         })
 
+        .catch(function(erro) {            // Tratar erros
+            alert(erro.message);
+        })
+
 });
